@@ -1,4 +1,5 @@
 kubectl apply -f namespace.yaml
 helm install fluxchart ./ \
---set environment=dev
-#-f dev-values.yaml
+-f dev-values.yaml \
+--set gitUsername=$1 \
+--set gitToken=$2

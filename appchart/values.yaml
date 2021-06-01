@@ -1,0 +1,7 @@
+#replicaCount:
+#image: "mcreativo/hello-world"
+#namespace: "demo"
+#appName: "hello-world"
+#environment: "dev"
+#appPort: 5000
+#exposedPort: 30000

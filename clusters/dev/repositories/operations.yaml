@@ -1,0 +1,12 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: operation-repository
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: master
+  url: https://github.com/marcinziolo/operations
+  secretRef:
+    name: git-credentials
