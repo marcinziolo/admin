@@ -5,6 +5,6 @@ metadata:
   namespace: flux-system
 data:
   values.yaml: |
-    adminConfigVersion: "1.0.2"
+    adminConfigVersion: "1.0.3"
     environments:
-      proxy: proxy-dev
+      proxy: proxy-dev2
