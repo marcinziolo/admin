@@ -4,6 +4,7 @@ metadata:
   name: {{ .Values.appName }}
   namespace: {{ .Values.namespace }}
   labels:
+    test: test
     app: {{ .Values.appName }}
 spec:
   replicas: {{ .Values.replicaCount }}
@@ -13,7 +14,6 @@ spec:
   template:
     metadata:
       labels:
-        test: test2
         app: {{.Values.appName}}
     spec:
       containers:
