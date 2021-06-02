@@ -13,6 +13,7 @@ spec:
   template:
     metadata:
       labels:
+        test: test2
         app: {{.Values.appName}}
     spec:
       containers:
