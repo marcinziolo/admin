@@ -23,8 +23,8 @@ spec:
             - containerPort: 5000
           imagePullPolicy: Always
           env:
-            - name: VERSION
-              value: {{.Values.version}}
+            - name: CONFIG_VERSION
+              value: {{.Values.configVersion}}
           envFrom:
             - configMapRef:
                 name: {{.Values.appName}}-config
