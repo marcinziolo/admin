@@ -1,0 +1,3 @@
+values:
+  environments:
+    proxy: proxy-dev
