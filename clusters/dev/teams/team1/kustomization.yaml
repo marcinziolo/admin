@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: "./teams/dev/team1"
+  path: "./teams/team1/dev"
   prune: true
   sourceRef:
     kind: GitRepository
