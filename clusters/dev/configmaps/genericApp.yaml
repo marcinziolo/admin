@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: generic-app-config
+  namespace: flux-system
+data:
+  adminConfigVersion: "1.0.2"
+  environments:
+    proxy: proxy-dev
