@@ -1,4 +1,4 @@
 values:
-  adminConfigVersion: "1.0.0"
+  adminConfigVersion: "1.0.1"
   environments:
     proxy: proxy-dev
