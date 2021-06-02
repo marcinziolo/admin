@@ -25,6 +25,8 @@ spec:
           env:
             - name: CONFIG_VERSION
               value: {{.Values.configVersion}}
+            - name: ADMIN_CONFIG_VERSION
+              value: {{.Values.adminConfigVersion}}
           envFrom:
             - configMapRef:
                 name: {{.Values.appName}}-config
