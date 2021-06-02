@@ -6,4 +6,4 @@ metadata:
   labels:
     app: {{.Values.appName}}
 data:
-  ENV: {{.Values.environment}}
+  {{- toYaml .Values.environments | nindent 2 }}

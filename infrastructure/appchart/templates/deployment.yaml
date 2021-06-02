@@ -13,11 +13,11 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ .Values.appName }}
+        app: {{.Values.appName}}
     spec:
       containers:
-        - name: {{ .Values.appName }}
-          image: {{ .Values.image }}
+        - name: {{.Values.appName}}
+          image: {{.Values.image}}:{{.Values.appVersion}}
           ports:
             - containerPort: 5000
           imagePullPolicy: Always
